@@ -1,0 +1,7 @@
+auto: true
+pygments: true
+lsi: false
+paginate:
+permalink: /:categories/:title/
+include:
+  - .htaccess
