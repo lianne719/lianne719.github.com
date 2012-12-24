@@ -2,6 +2,7 @@ auto: true
 pygments: true
 lsi: false
 paginate:
-permalink: /:categories/:title/
+root_uri: http://liannelee.me
+permalink: /:title/
 include:
   - .htaccess
