@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Gnome Outreach Program for Women 2013 - Mozilla Release Metrics Dashboard Project</title>
+ <title>Lianne Lee</title>
  <link href="{{site.root_uri}}/feeds/articles.xml" rel="self"/>
  <link href="{{site.root_uri}}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -14,7 +14,7 @@ layout: nil
    <email>liannelee719@hotmail.com</email>
  </author>
 
- {% for post in site.categories.opw limit:20 offset:0 %}
+ {% for post in site.tags.opw limit:20 offset:0 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{site.root_uri}}{{ post.url }}"/>
