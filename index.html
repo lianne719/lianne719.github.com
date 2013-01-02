@@ -8,7 +8,7 @@ layout: default
         <div style="clear: both;">&nbsp;</div>
         <div class="entry">
 	        <p>{{ post.content | replace:'more start -->','' | replace:'<\!-- more end','' }}</p>
-	        <p class="links"><a href="{{ post.url }}">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>
+	        <p class="links"><a href="{{ post.url }}">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}#comments">Comments</a></p>
         </div>
     </div>
   {% endfor %}
