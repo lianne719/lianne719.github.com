@@ -4,12 +4,12 @@ title: Categories
 body_id: archives
 ---
 <header>
-  <h2>{{ page.title }}</h2>
+  <h2><a href="/archives/categories.html" class="category">{{ page.title }}</a></h2>
 </header>
 
 {% if site.categories.news.size > 0 %}
 <section>
-  <h3>Life events</h3>
+  <h3><a href="/archives/news.html">Life events</a></h3>
   <ul>
   {% for post in site.categories.news %}
     <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %B %Y' }}</time> &mdash; <a href="{{ post.url }}" class="title">{{ post.title }}</a></li>
@@ -20,7 +20,7 @@ body_id: archives
 
 {% if site.categories.opw.size > 0 %}
 <section>
-  <h3>Mozilla | Outreach Program for Women</h3>
+  <h3><a href="/archives/opw.html">Mozilla | Outreach Program for Women</a></h3>
   <ul>
   {% for post in site.categories.opw %}
     <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %B %Y' }}</time> &mdash; <a href="{{ post.url }}" class="title">{{ post.title }}</a></li>

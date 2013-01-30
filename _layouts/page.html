@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section>
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>posted on <time datetime="{{ page.date | date_to_xmlschema }}" pubdate>{{ page.date | date: "%d %B %Y" }}</time> in <a href="/archives/categories.html" class="category">{{ page.categories }}</a></p>
+  </header>
+  <p>
+  {{ content }}
+  </p>
+</section>

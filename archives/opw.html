@@ -1,0 +1,14 @@
+---
+layout: default
+---
+  {% for post in site.categories.opw %}
+    <div class="post">
+        <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="meta"><span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time></span><span class="posted">in <a href="/archives/categories.html" class="category">{{ post.categories }}</a></span></p>
+        <div style="clear: both;">&nbsp;</div>
+        <div class="entry">
+	        <p>{{ post.content | replace:'more start -->','' | replace:'<\!-- more end','' }}</p>
+	        <!--<p class="links"><a href="{{ post.url }}">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comments</a></p>-->
+        </div>
+    </div>
+  {% endfor %}
